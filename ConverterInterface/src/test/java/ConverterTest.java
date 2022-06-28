@@ -25,7 +25,7 @@ public class ConverterTest {
     }
 
 
-    //Tests for Switch statement 
+    //Tests for Switch statement
     @Test
     public void shouldConvertMonthNumberToStringSwitch(){
         Converter converter = new ConverterSwitch();
@@ -34,8 +34,12 @@ public class ConverterTest {
         assertEquals(expectedOutput, actualOutput);
     }
 
-    @Test void shouldConvertDayNumberToStringSwitch(){
+    @Test
+    public void shouldConvertDayNumberToStringSwitch(){
         Converter converter = new ConverterSwitch();
+        String expectedOutput = "Thursday";
+        String actualOutput = converter.convertDay( 5);
+        assertEquals(expectedOutput, actualOutput);
     }
 
 }

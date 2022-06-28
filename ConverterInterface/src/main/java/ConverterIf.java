@@ -36,24 +36,31 @@ public class ConverterIf implements Converter {
     public String convertDay(int dayNumber){
 
         if (dayNumber == 1) {
+            System.out.println("Sunday");
             return "Sunday";
         }
         else if (dayNumber == 2){
+            System.out.println("Monday");
             return "Monday";
         }
         else if (dayNumber == 3){
+            System.out.println("Tuesday");
             return "Tuesday";
         }
         else if (dayNumber == 4){
+            System.out.println("Wednesday");
             return "Wednesday";
         }
         else if (dayNumber == 5){
+            System.out.println("Thursday");
             return "Thursday";
         }
         else if (dayNumber == 6){
+            System.out.println("Friday");
             return "Friday";
         }
         else if (dayNumber == 7){
+            System.out.println("Saturday");
             return "Saturday";
         }
         else {
